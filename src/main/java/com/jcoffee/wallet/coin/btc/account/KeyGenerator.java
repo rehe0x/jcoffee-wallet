@@ -12,7 +12,7 @@ import java.security.spec.ECGenParameterSpec;
 import java.security.spec.ECPoint;
 
 /**
- * @program blockchain_study
+ * @program jcoffee-wallet
  * @description:
  * @author: Horng
  * @create: 2020/09/02 16:37

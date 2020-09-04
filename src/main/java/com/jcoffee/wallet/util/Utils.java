@@ -7,7 +7,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 /**
- * @program blockchain_study 
+ * @program jcoffee-wallet
  * @description:  
  * @author: Horng 
  * @create: 2020/09/02 16:39 
