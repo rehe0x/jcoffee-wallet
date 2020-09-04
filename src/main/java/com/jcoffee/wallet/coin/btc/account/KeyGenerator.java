@@ -1,7 +1,8 @@
-package com.jcoffee.wallet.btc.account;
+package com.jcoffee.wallet.coin.btc.account;
 
+import com.jcoffee.wallet.common.Account;
+import com.jcoffee.wallet.util.Utils;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
-import org.bouncycastle.util.encoders.Hex;
 
 import java.math.BigInteger;
 import java.security.*;
@@ -61,8 +62,8 @@ public class KeyGenerator {
     }
 
 
-    public static Address createAddress(){
-        Address key = new Address();
+    public static Account createAddress(){
+        Account key = new Account();
         key.Reset();
         KeyGenerator generator = new KeyGenerator();
         generator.GenerateKey(key);
@@ -77,7 +78,7 @@ public class KeyGenerator {
             }
         }
 
-        Address key = new Address();
+        Account key = new Account();
         key.Reset();
         KeyGenerator generator = new KeyGenerator();
 
@@ -121,7 +122,7 @@ public class KeyGenerator {
 
     }
 
-    public boolean GenerateKey(Address key) {
+    public boolean GenerateKey(Account key) {
         key.Reset();
         // Generate key pair，依据椭圆曲线算法产生公私钥对
         KeyPair kp = sKeyGen.generateKeyPair();

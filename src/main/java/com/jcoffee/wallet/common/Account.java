@@ -1,19 +1,19 @@
-package com.jcoffee.wallet.btc.account;
+package com.jcoffee.wallet.common;
 /**
  * @program blockchain_study 
  * @description:  
  * @author: Horng 
  * @create: 2020/09/02 16:31 
  */
-public class Address {
+public class Account {
     private String privkey;
     private String pubkey;
     private String address;
-    public Address() {
+    public Account() {
         Reset();
     }
 
-    public Address(String privkey, String pubkey, String address) {
+    public Account(String privkey, String pubkey, String address) {
         this.privkey = privkey;
         this.pubkey = pubkey;
         this.address = address;

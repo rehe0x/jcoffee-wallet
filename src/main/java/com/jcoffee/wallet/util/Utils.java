@@ -1,8 +1,7 @@
-package com.jcoffee.wallet.btc.account;
+package com.jcoffee.wallet.util;
 
 import org.bouncycastle.crypto.Digest;
 import org.bouncycastle.crypto.digests.RIPEMD160Digest;
-import org.bouncycastle.util.encoders.Hex;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -51,7 +50,7 @@ public class Utils {
     /**
      * 16进制字符串转换为数组
      *
-     * @param bArray
+     * @param s
      * @return HexString
      */
     public static byte[] HexStringToByteArray(String s) {

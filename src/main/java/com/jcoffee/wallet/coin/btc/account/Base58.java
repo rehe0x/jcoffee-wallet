@@ -1,4 +1,4 @@
-package com.jcoffee.wallet.btc.account;
+package com.jcoffee.wallet.coin.btc.account;
 
 import java.io.UnsupportedEncodingException;
 
