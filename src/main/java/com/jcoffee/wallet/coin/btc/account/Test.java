@@ -11,7 +11,7 @@ import com.jcoffee.wallet.common.Account;
  */
 public class Test {
     public static void main(String[] args) {
-        Account account = KeyGenerator.createAddress();
-        System.out.println(account.ToString());
+        Account account = KeyGenerator.generateAccount("KzNEbS7Dnbs6uvs2qC7M8xNNWa6dUvdGTwLjC1wTa2P4m1vSDjFD");
+        System.out.println(account.toString());
     }
 }

@@ -10,33 +10,14 @@ public class Account {
     private String pubkey;
     private String address;
     public Account() {
-        Reset();
     }
-
     public Account(String privkey, String pubkey, String address) {
         this.privkey = privkey;
         this.pubkey = pubkey;
         this.address = address;
     }
-
-    public void Reset() {
-        this.privkey = null;
-        this.pubkey = null;
-        this.address = null;
-    }
-    public void SetPrivKey(String privkey) {
-        this.privkey = privkey;
-    }
-
-    public void SetPubKey(String pubkey) {
-       this.pubkey = pubkey;
-    }
-
-    public void SetAddress(String address) {
-        this.address = address;
-    }
-
-     public String ToString() {
+     @Override
+     public String toString() {
       return "{\n"
 
          + "\t privkey:" + this.privkey+"\n"
